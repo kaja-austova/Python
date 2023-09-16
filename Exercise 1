@@ -1,0 +1,4 @@
+import random
+a1 = random.randint(0,50)
+a2 = random.randint(0,50)
+print (a1 + a2)
