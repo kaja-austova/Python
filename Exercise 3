@@ -1,0 +1,12 @@
+import random
+cisla = []
+for _ in range(1000):
+    x = random.randint(0,10)
+    cisla.append(x)
+
+    
+pocet_nulovych = 0
+for cislo in cisla:
+    if cislo==0:
+        pocet_nulovych = pocet_nulovych + 1
+print (pocet_nulovych)
