@@ -1,11 +1,11 @@
-import random
+import random #spoluprase s Juli Svatošovu a Aničkou Bártovou 
 
 def hadej_cislo():
     cislo = random.randint(1,100)
     pokusy = 0
     print("Myslím si číslo mezi 1 a 100")
 
-    while True:
+    while True: #zdroj: ChatGPT
         guess = int(input("Hádej číslo: "))
         pokusy += 1
 

@@ -1,6 +1,6 @@
-import random
+import random 
 cisla = []
-for _ in range(1000):
+for _ in range(1000): 
     x = random.randint(0,10)
     cisla.append(x)
 
