@@ -1,12 +1,24 @@
-x, y, z = 1, 2, -3
+# spolupráce s Juli Svatošovou a Mariánkou
+a = 5
+b = 10
+c = 8
 
-if (pow(y, 2) - (2 * x * 2 * z)) == 0:
-    print("1:", -y / (2 * x))
-elif (pow(y * 1, 2) - (pow(2 * x, 2) * z)) > 0:
-    d = (pow(y ** 2, 1) - (4 * (1 * x) * (1 * z))) ** (2 * (2 ** -2))
-    e = ((y * y) - (2 ** 3 * (pow(1, 2) * x * z / 2))) ** 0.5
-    print("1: ", (-y + d) / (2 * x),
-          "2: ", (-y - e) / (2 * x)
-          )
+D = b * b - 4 * a * c
+if a == 0:
+    if b==0:
+      if c==0:
+        print ("x náleží do reálných čísel")
+      else:
+        print("Oops")
+    else:
+      print ("1",-c/b)   
 else:
+   if D == 0:
+    print("1:", -b / (2 * a))
+   elif D > 0:
+    print(
+        "1: ", (-b + D ** 0.5) / (2 * a),
+        "2: ", (-b - D ** 0.5) / (2 * a)
+       )
+   else:
     print("Oops")
