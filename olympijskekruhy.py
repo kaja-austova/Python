@@ -1,4 +1,5 @@
 # Insert everything into: https://notebooks.gesis.org/binder/jupyter/user/ksp-ksp-serial-34-hu9we6qy/lab/tree/serial1.ipynb
+#použitý zdroj: https://ksp.mff.cuni.cz/h/ulohy/34/zadani1.html#task-34-1-S
 
 %%manim -v WARNING -qm Animate
 
