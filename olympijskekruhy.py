@@ -11,13 +11,13 @@ class Animate(Scene):
         circle2 = Circle(color=RED).shift(RIGHT * 2.2)
         circle3 = Circle(color=YELLOW).shift(DOWN * 1.2, LEFT * 1.2)
         circle4 = Circle(color=GREEN).shift(DOWN * 1.2, RIGHT * 1.2)
-        text = Tex("Olympijské hry 2024")
+        text = Tex("Příští rok v Paříži:")
+        text1 = Tex("Letní olympijské hry 2024")
 
         self.play(Write(circle),Write(circle1),Write(circle2), Write(circle3), Write(circle4))
         self.play(circle3.animate.shift(UP * 1.2), circle4.animate.shift(UP * 1.2))
         self.play(circle.animate.shift(RIGHT * 2.2), circle2.animate.shift(LEFT * 2.2), circle3.animate.shift(RIGHT * 1.2), circle4.animate.shift(LEFT * 1.2))
         
-    
         self.play(
             circle1.animate.scale(0.7).set_fill(BLACK, 1),
             circle.animate.scale(0.7).set_fill(BLUE, 1), 
@@ -32,6 +32,10 @@ class Animate(Scene):
             circle2.animate.shift( RIGHT * 1.4),
             circle4.animate.shift(RIGHT * 2.8)
             )
-        self.play(Write(text))
         
-        self.play(FadeOut(circle), FadeOut(circle1),FadeOut(circle2),FadeOut(circle3),FadeOut(circle4),FadeOut(text))
+        self.play(Write(text))
+        self.play(FadeOut(text))
+        self.play(Write(text1))
+       
+        self.play(FadeOut(circle), FadeOut(circle1),FadeOut(circle2),FadeOut(circle3),FadeOut(circle4),FadeOut(text1))
+
