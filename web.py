@@ -3,7 +3,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def pondeli_def():
+def index_def():
     return render_template("neco.html", title="Jídelníček", den = "Jídelníček")
 
 @app.route('/pondeli')
