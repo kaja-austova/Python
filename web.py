@@ -17,7 +17,7 @@ def utery_def():
 
 @app.route('/streda')
 def streda_def():
-    return render_template("web.html", title="Středa", den = "Středa", text = "Už jste v polovině!", bunka_start="A20", bunka_konec="G24" )
+    return render_template("web.html", title="Středa", den = "Středa", text = "Už jste v polovině týdne!", bunka_start="A20", bunka_konec="G24" )
 
 @app.route('/ctvrtek')
 def čtvrtek_def():
